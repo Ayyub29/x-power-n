@@ -1,6 +1,3 @@
-# Saving the README content into a .md file
-
-readme_content = """
 # MyPow Function
 
 ## Overview
@@ -16,10 +13,12 @@ x (float): The base number to be raised to a power.
 n (int): The exponent (can be positive, negative, or zero).
 Returns:
 float: The result of x raised to the power of n.
-How it Works
+```
+
+## How it Works
 The algorithm uses a dictionary (calc_res) to store intermediate results of power calculations. This avoids recalculating powers repeatedly and speeds up the process.
 
-Key Features:
+## Key Features:
 Optimized Power Calculation:
 The function reduces unnecessary multiplications by storing results for powers that have already been calculated.
 It uses a combination of doubling and halving strategies to efficiently calculate powers, making it faster than a naive multiplication loop.
@@ -28,11 +27,7 @@ If the exponent n is negative, the function calculates the positive exponent fir
 Edge Cases
 If n = 0, the function will return 1 since any number raised to the power of 0 is 1.
 If n < 0, the function calculates x^|n| and then returns 1 / result.
-Example
-python
-Always show details
 
-Copy code
 # Example 1: Positive power
 result = myPow(2, 10)
 print(result)  # Output: 1024.0
