@@ -12,12 +12,15 @@ def myPow(x: float, n: int) -> float:
     cur_pow = 1 # current power 
     res = 1
     while pow_calculated < n:
+        # calculate the power result
         res *= calc_res[cur_pow]
         pow_calculated += cur_pow
         calc_res[pow_calculated] = res
-        if pow_calculated * 2 <= n: 
+
+        # to get next power
+        if pow_calculated * 2 <= n:  # if we can increase it to double the last power
             cur_pow = pow_calculated
-        else:
+        else: # if we can't, we can just decrease the power by divide the power to 2
             pow_remaining = n - pow_calculated
             while pow_remaining < cur_pow:
                 cur_pow = cur_pow / 2
