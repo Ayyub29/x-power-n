@@ -28,11 +28,11 @@ Edge Cases
 If n = 0, the function will return 1 since any number raised to the power of 0 is 1.
 If n < 0, the function calculates x^|n| and then returns 1 / result.
 
-# Example 1: Positive power
+#### Example 1: Positive power
 result = myPow(2, 10)
 print(result)  # Output: 1024.0
 
-# Example 2: Negative power
+#### Example 2: Negative power
 result = myPow(2, -3)
 print(result)  # Output: 0.125
 Time Complexity
